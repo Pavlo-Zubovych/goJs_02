@@ -1,5 +1,18 @@
 const checkForSpam = function (message) {
   // твій код
+  message = message.toLowerCase();
+
+  console.log(message);
+
+  if (message.includes('spam')) {
+    return true;
+  }
+
+  if (message.includes('sale')) {
+    return true;
+  }
+
+  return false;
 };
 
 /*
